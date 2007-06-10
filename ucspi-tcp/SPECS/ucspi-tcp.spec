@@ -6,7 +6,7 @@
 Name:		%{name}
 Summary: 	Dan Bernstiens TCP superserver
 Version:	%{version}
-Release:	%{release}.HIL.%{dist}
+Release:	%{release}.%{dist}
 License: 	Copyright 2000 D. J. Bernstein <djb@pobox.com>
 Group:		%{group}
 Source:		http://cr.yp.to/ucspi-tcp/ucspi-tcp-%{version}.tar.gz
@@ -67,3 +67,7 @@ echo $RPM_BUILD_ROOT/usr > conf-home
 /usr/bin/who@
 
 %changelog
+
+* Sun Jun 10 2007 Robin Kearney <robin@riviera.org.uk>
+- Modded Release line so it is not hilde specific
+

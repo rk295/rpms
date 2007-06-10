@@ -6,7 +6,7 @@
 Name:		%{name}
 Summary: 	Domain Name System tools
 Version:	%{version}
-Release:	%{release}.HIL.%{dist}
+Release:	%{release}.%{dist}
 License: 	Copyright 2000 D. J. Bernstein <djb@pobox.com>
 Group:		%{group}
 Source: 	http://cr.yp.to/djbdns/djbdns-%{PACKAGE_VERSION}.tar.gz
@@ -20,6 +20,9 @@ Patch: 		djbdns-1.05.errno.patch
 djbdns is a collection of Domain Name System tools.
 
 %changelog
+
+* Sun Jun 10 2007 Robin Kearney <robin@riviera.org.uk>
+- Modded Release line so it is not hilde specific
 
 * Mon Dec 12 2005 Robin Kearney <robin@hildebrand.co.uk>
 - Added sdb Release tag

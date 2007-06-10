@@ -6,7 +6,7 @@
 Name:		%{name}
 Summary: 	Dan Bernstiens Daemon manager
 Version:	%{version}
-Release:	%{release}.HIL.%{dist}
+Release:	%{release}.%{dist}
 License: 	Copyright 2000 D. J. Bernstein <djb@pobox.com>
 Group:		%{group}
 Source:		http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
@@ -76,3 +76,7 @@ fi
 /usr/bin/tai64nlocal
 
 %changelog
+
+* Sun Jun 10 2007 Robin Kearney <robin@riviera.org.uk>
+- Modded Release line so it is not hilde specific
+
