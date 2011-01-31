@@ -1,0 +1,5 @@
+I had to install the following RPMS to build this AND include SSL support:
+
+* db4
+* db4-devel
+* openssl-devel
