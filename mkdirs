@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$1" = "" ] ; then
+    echo "Give me a package name to create the dirs for" ; 
+    exit 1
+fi
+echo "Making dirs for package: $1"
+mkdir -p $1/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
