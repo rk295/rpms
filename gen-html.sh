@@ -8,7 +8,7 @@ for Package in * ; do
 
 	if [ -d $Package ] ; then
 		cd $Package
-		echo "<li>$Package</li><ul>"
+		echo "<lh>$Package</li><ul>"
 		for RPM in `find . -name \*.rpm` ; do
 			
 			tmp=$(echo $RPM | sed 's/^\.//g')
