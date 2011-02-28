@@ -1,6 +1,9 @@
+%define version 0.41
+%define release 1
+
 Name:           wakeonlan
-Version:        0.41
-Release:        0.fdr.1
+Version:	%{version}
+Release:	%{release}.%{dist}
 Epoch:          0
 Summary:        Perl script to wake up computers through Magic Packets
 
