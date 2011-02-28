@@ -1,3 +1,6 @@
+%define version 1.2.1
+%define release 5
+
 # $Id$
 # Authority: dag
 
@@ -6,8 +9,8 @@
 
 Summary: HA monitor built upon LVS, VRRP and services poller
 Name: keepalived
-Version: 1.2.1
-Release: 5
+Version: %{version}
+Release: %{release}.%{dist}
 License: GPL
 Group: Applications/System
 URL: http://www.keepalived.org/
