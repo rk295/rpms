@@ -1,4 +1,4 @@
-%define version 1.1.19
+%define version 1.2.1
 %define release 5
 
 # $Id$
