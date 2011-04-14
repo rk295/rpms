@@ -1,6 +1,6 @@
 %define name daemontools
 %define version 0.76
-%define release 1
+%define release 2
 %define group System Environment/Daemons
 
 Name:		%{name}
@@ -33,6 +33,7 @@ check the status of your services.
 %install
 %{__mkdir} -p	$RPM_BUILD_ROOT/service
 %{__mkdir} -p	$RPM_BUILD_ROOT/usr/bin
+%{__sed} -i -e  's/\/command[:\/]//g' ./command/svscanboot
 %{__cp} ./command/*	$RPM_BUILD_ROOT/usr/bin
 
 %post
@@ -76,6 +77,9 @@ fi
 /usr/bin/tai64nlocal
 
 %changelog
+
+* Thu Apr 14 2011 Robin Kearney <robin@riviera.org.uk>
+- Removed the /command path from the svscanboot script
 
 * Sun Jun 10 2007 Robin Kearney <robin@riviera.org.uk>
 - Modded Release line so it is not hilde specific
