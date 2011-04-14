@@ -11,7 +11,7 @@ License: 	Copyright 2000 D. J. Bernstein <djb@pobox.com>
 Group:		%{group}
 Source:		http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
 URL:		http://cr.yp.to/daemontools.html
-Packager: 	Hildebrand Ops <ops@hildebrand.co.uk>
+Packager: 	Robin Kearney <robin@riviera.org.uk>
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 Patch: 		daemontools-0.76.errno.patch
