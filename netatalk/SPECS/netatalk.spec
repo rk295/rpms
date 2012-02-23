@@ -1,7 +1,7 @@
 %define initdir /etc/rc.d/init.d
 %define name netatalk
-%define version 2.0.5
-%define release 2
+%define version 2.2
+%define release 1
 %define group System Environment/Daemons
 
 Summary: AppleTalk networking programs
