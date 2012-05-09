@@ -1,6 +1,6 @@
 %define name djbdns
 %define version 1.05
-%define release 1
+%define release 2
 %define group System Environment/Daemons
 
 Name:		%{name}
@@ -9,9 +9,9 @@ Version:	%{version}
 Release:	%{release}.%{dist}
 License: 	Copyright 2000 D. J. Bernstein <djb@pobox.com>
 Group:		%{group}
-Source: 	http://cr.yp.to/djbdns/djbdns-%{PACKAGE_VERSION}.tar.gz
+Source: 	http://cr.yp.to/djbdns/djbdns-%{version}.tar.gz
 URL: 		http://cr.yp.to/djbdns.html
-Packager: 	Hildebrand Ops <ops@hildebrand.co.uk>
+Packager: 	Robin Kearney <robin@riviera.org.uk>
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 Patch: 		djbdns-1.05.errno.patch
@@ -20,6 +20,9 @@ Patch: 		djbdns-1.05.errno.patch
 djbdns is a collection of Domain Name System tools.
 
 %changelog
+
+* Wed May 9 2012 Robin Kearney <robin@riviera.org.uk>
+- Fixed a minor issue with the Source line referencing the unknown PACKAGE_VERSION variable
 
 * Sun Jun 10 2007 Robin Kearney <robin@riviera.org.uk>
 - Modded Release line so it is not hilde specific
