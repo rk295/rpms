@@ -24,5 +24,3 @@ There are a couple of helper scripts int he top level directory:
 
 * mkdirs - creates an empty package directory structure
 * gen-html.sh - used to make a quick index to put on my site (http://riviera.org.uk)
-cd into <package>
-rpmbuild --define="dist fc7" --define="_topdir `pwd`"  -bb SPECS/<package>.spec
