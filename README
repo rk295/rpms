@@ -1,4 +1,0 @@
-built with
-
-cd into <package>
-rpmbuild --define="dist fc7" --define="_topdir `pwd`"  -bb SPECS/<package>.spec
