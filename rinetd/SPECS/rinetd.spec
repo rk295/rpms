@@ -1,6 +1,6 @@
 %define name rinetd
 %define version 0.62
-%define release 0.1
+%define release 0.2
 %define group Productivity/Networking/System
 
 Name:           %{name}
